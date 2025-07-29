@@ -4,8 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
+    <title>Table 3</title>
     <style>
+        table {
+            border: 1px solid green;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: green;
+            color: white;
+        }
+
+        td {
+            border: 1px solid green;
+            padding: 13px;
+        }
+
+        tr:hover {
+            background-color: rgb(181, 176, 176);
+        }
+
         a:hover {
             color: black;
             text-decoration: underline;
@@ -44,27 +63,36 @@
             <li><a href="ass8.html">Page 10</a></li>
         </ul>
     </div>
-    <img src="doggo.png" alt="">
-    <h1>My name is Doggo</h1>
-    <dl>
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, nostrum.</p>
-        <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Professional Programmer</li>
-            <li>Lorem, ipsum.</li>
-        </ul>
-    </dl>
-    <dl>
-        <h2>Contact Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, neque.</p>
-        <ul>
-            <li>Phone No</li>
-            <li>Email ID</li>
-            <li>Facebook ID</li>
-        </ul>
-    </dl>
-    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <table>
+        <thead>
+            <tr>
+                <td>Rank</td>
+                <td>Name</td>
+                <td>Points</td>
+                <td>Team</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dominic</td>
+                <td>88,110</td>
+                <td>dcode</td>
+            </tr>
+            <tr style="color: green;background-color: rgb(238, 231, 231);">
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52,300</td>
+                <td>dcode</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
