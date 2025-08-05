@@ -4,21 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Form 3</title>
+    <link rel="stylesheet" href="navbar.css">
     <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
+        body {
+            background-color: rgb(84, 84, 224);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
+        form {
+            background-color: rgb(33, 33, 141);
+            width: fit-content;
+            margin: auto;
+            padding: 20px;
+            margin-top: 90px;
+            height: fit-content;
+            border: 5px solid rgb(14, 14, 224);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            color: blue;
+        }
+
+        input {
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid rgb(37, 37, 231);
+            width: 100%;
+        }
+
+        button {
+            background-color: rgb(26, 26, 159);
+            color: white;
+            border: 1px solid white;
+            padding: 13px;
+            margin-left: 170px;
+            margin-top: 30px;
+        }
+
+        /* button:hover{
+            background-color: rgb(12, 12, 109);
+         } */
+        h5 {
+            color: white;
+            text-align: center;
         }
     </style>
-    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
@@ -99,7 +135,21 @@
         </div>
     </nav>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <form>
+        <h1>CONTACT US</h1>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut expedi <br> ta ut, sunt voluptatibus dolore a!
+        </h5>
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="mail">Your Mail</label>
+        <input type="email" name="email" id="mail" required><br><br>
+
+        <label for="message">Your Message</label>
+        <input type="text" name="message" id="message" required><br><br>
+
+        <button>submit</button>
+    </form>
 </body>
+
+</html>

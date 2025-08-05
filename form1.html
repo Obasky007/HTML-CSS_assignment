@@ -4,18 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Form 1</title>
     <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
+        body {
+            background: linear-gradient(to right, rgb(89, 89, 225), rgb(222, 88, 222));
+            ;
+            font-family: sans-serif;
         }
 
-        h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
+        form {
+            background-color: white;
+            width: fit-content;
+            padding: 46px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        input[type="text"] {
+            padding: 5px 0;
+            width: 100%;
+        }
+
+        input[type="password"] {
+            padding: 5px 0;
+            width: 100%;
+        }
+
+        button {
+
+            background: linear-gradient(to right, rgb(80, 80, 123), rgb(242, 0, 242));
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 0px;
+            width: 230px;
+        }
+
+        b {
+            font-size: larger;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, rgb(89, 89, 225), rgb(222, 88, 222));
+        }
+
+        .form:hover{
+           font-size: 0px;
+           text-decoration: underline;
         }
     </style>
     <link rel="stylesheet" href="navbar.css">
@@ -99,7 +138,22 @@
         </div>
     </nav>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <form>
+
+        <h1>Login Form</h1><br>
+
+        <label for="Em/ph">Email or Phone</label><br>
+        <input type="text" name="EmailorPhone" id="Em/ph" required>
+        <br><br>
+        <label for="Password">Password</label><br>
+        <input type="Password" name="Password" id="Password" required>
+        <br>
+        <a href="" class="form">Forgot Password?</a>
+        <br><br> 
+        <br>
+        <button><b>Login</b></button><br><br>
+        <p>Not a member?<a href="" class="form">Sign Up Now</a></p>
+    </form>
 </body>
+
+</html>

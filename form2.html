@@ -4,18 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Form 2</title>
     <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
+        body {
+            background-image: url(ibg.png);
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
+        form {
+            background-color: rgb(193, 137, 193);
+            width: fit-content;
+            margin: auto;
+            padding: 50px 30px;
+            margin-top: 90px;
+            border-radius: 20px;
+            height: fit-content;
+            border: 20rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            color: white;
+        }
+
+        input {
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid white;
+            width: 100%;
+        }
+
+        input[type="checkbox"] {
+            width: 19px
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 90px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: rgb(231, 96, 231);
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        b:hover {
+            text-decoration: underline;
+            color: rgb(217, 104, 104);
+        }
+
+        .form:hover {
+            font-size: 0px;
+            text-decoration: underline;
         }
     </style>
     <link rel="stylesheet" href="navbar.css">
@@ -99,7 +152,22 @@
         </div>
     </nav>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <form>
+        <h1>Login</h1>
+
+        <label for="Email">Email</label><br>
+        <input type="Email" name="Email" id="Email" required><br><br>
+
+        <label for="Password">Password</label><br>
+        <input type="Password" name="Password" id="Password" required><br><br>
+
+        <input type="checkbox" name="Remember_me" id="remme">
+        <label for="remme">Remember Me <b>Forgot Password</b></label>
+
+        <br><br>
+        <button>Log in</button><br><br>
+        <p>Don't have a account <a href="" class="form">Register</a></p>
+    </form>
 </body>
+
+</html>

@@ -4,18 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Table 3</title>
     <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
+        table {
+            border: 1px solid green;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 10px;
         }
 
-        h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
+        thead {
+            background-color: green;
+            color: white;
+        }
+
+        td {
+            border: 1px solid green;
+            padding: 13px;
+        }
+
+        tr:hover {
+            background-color: rgb(181, 176, 176);
         }
     </style>
     <link rel="stylesheet" href="navbar.css">
@@ -99,7 +108,36 @@
         </div>
     </nav>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <table>
+        <thead>
+            <tr>
+                <td>Rank</td>
+                <td>Name</td>
+                <td>Points</td>
+                <td>Team</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dominic</td>
+                <td>88,110</td>
+                <td>dcode</td>
+            </tr>
+            <tr style="color: green;background-color: rgb(238, 231, 231);">
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52,300</td>
+                <td>dcode</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
+</html>

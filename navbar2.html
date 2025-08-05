@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 0 10px;
+
+        }
+
+        .texts {
+            font-weight: 800;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .bar {
+            width: 4px;
+            height: 20px;
+            border-radius: 1px;
+            display: inline-block;
+        }
+
+        .contents {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .navlinks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            gap: 20px;
+            padding: 0;
+
+        }
+
+        .navit {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .dropdownlist {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+
+
+        }
+
+        .icon {
+            font-size: 10px;
+        }
+
+        .listdrop {
+            display: none;
+            color: white;
+            background-color: black;
+            position: absolute;
+            list-style-type: none;
+        }
+
+        .droptoggle:hover .listdrop {
+            display: block;
+            margin-top: 90px;
+
+        }
+
+
+        .cta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta1 {
+            border: none;
+            padding: 9px 20px;
+            border-radius: 20px;
+        }
+
+        .buy {
+            background-color: red;
+            color: white;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="text">
+            <h1>Oba's Ass</h1>
+        </div>
+        <div class="content">
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="nav-it">Home</a>
+                </li>
+                <li>
+                    <a href="Pochi.html" class="nav-it">Pochi</a>
+                </li>
+                <li>
+                    <a href="aboutme.html" class="nav-it">About Me</a>
+                </li>
+                <li>
+                    <a href="test.html" class="nav-it">Test</a>
+                </li>
+                <li>
+                    <a href="page5.html" class="nav-it">Page 5</a>
+                </li>
+                <li>
+                    <a href="page6.html" class="nav-it">Page 6</a>
+                </li>
+                <li>
+                    <a href="cards.html" class="nav-it">Cards</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="nav-it">My Gallery</a>
+                </li>
+                  <li>
+                    <a href="animations.html" class="nav-it">Animations</a>
+                </li>
+                <li>
+                    <a href="startup.html" class="nav-it">Startup</a>
+                </li>
+                <li class="dropdown-list drop-toggle">
+                    <a class="nav-it" href="">Forms</a>
+                    <i class="fa fa-chevron-down dropdown"></i>
+                    <ul class="list-drop">
+                        <li><a href="form1.html">Form 1</a></li>
+                        <li><a href="form2.html">Form 2</a></li>
+                        <li><a href="form3.html">Form 3</a></li>
+                        <li><a href="form4.html">Form 4</a></li>
+                        <li><a href="form5.html">Form 5</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-list drop-toggle">
+                    <a class="nav-it" href="">Table</a>
+                    <i class="fa fa-chevron-down dropdown"></i>
+                    <ul class="list-drop">
+                        <li><a href="table1.html">Table 1</a></li>
+                        <li><a href="table2.html">Table 2</a></li>
+                        <li><a href="table3.html">Table 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-list drop-toggle">
+                    <a class="nav-it" href="">Navbar</a>
+                    <i class="fa fa-chevron-down dropdown"></i>
+                    <ul class="list-drop">
+                        <li><a href="navbar1.html">Navbar 1</a></li>
+                        <li><a href="navbar2.html">Navbar 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-list drop-toggle">
+                    <a class="nav-it" href="">Board Games</a>
+                    <i class="fa fa-chevron-down dropdown"></i>
+                    <ul class="list-drop">
+                        <li><a href="checkers.html">Checkers</a></li>
+                        <li><a href="ludo.html">Ludo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <nav class="nav">
+        <div class="texts">
+            <p>LEAD</p>
+        </div>
+        <div class="contents">
+
+            <ul class="navlinks">
+                <li>
+                    <a class="navit">Overview</a>
+                </li>
+
+                <li class="dropdownlist droptoggle">
+                    <a class="navit" href="">Pages</a>
+                    <i class="fa fa-chevron-down dropdown icon"></i>
+                    <ul class="listdrop">
+                        <li>Amazon</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </li>
+
+                <li class="dropdownlist droptoggle">
+                    <a class="navit" href="">Resources</a>
+                    <i class="fa fa-chevron-down dropdown icon"></i>
+                    <ul class="listdrop">
+                        <li>Ipsum.</li>
+                        <li>Cash</li>
+                        <li>Transfer</li>
+                        <li>Withdrawal</li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="navit" href="">Docs</a>
+                </li>
+
+            </ul>
+            <div class="cta">
+                <button class="cta1 buy" href="">Buy Now</button>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
+</body>
+
+</html>

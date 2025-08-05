@@ -4,21 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>page 6</title>
+    <link rel="stylesheet" href="navbar.css">
     <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
+        body {
+            /* display: flex;
+            justify-content: space-between;
+            align-items: center; */
+            height: 100vh;
+            margin: 0;
+            background-color: black;
         }
 
         h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
+            color: white;
+            position: relative;
+            left: 50px;
+            font-size: 50px;
+        }
+
+        p {
+            color: white;
+            text-align: left;
+            position: relative;
+            left: 50px;
+        }
+
+        button {
+            border-color: blueviolet;
+            background-color: transparent;
+            color: purple;
+            border-radius: 20px;
+            padding: 7px;
+            position: relative;
+            left: 59px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
         }
     </style>
-    <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
@@ -99,7 +125,20 @@
         </div>
     </nav>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <div class="container">
+        <div class="left">
+            <h2>Web Design & <br><a href="">Development</a><br> Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate mollitia consequuntur veritatis
+                dicta
+                ipsam
+                temporibus voluptate inventore autem debitis voluptatum vero iste, vel, iure sed!
+            </p>
+            <button>VOIR PLUS</button>
+        </div>
+        <div class="right">
+            <img src="image-removebg-preview (1).png" alt="">
+        </div>
+    </div>
 </body>
+
+</html>

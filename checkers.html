@@ -4,19 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Checkers</title>
     <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: rgb(237, 228, 228);
+            margin: auto;
+            margin-top: 20px;
         }
 
-        h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
+        td {
+            border: 1px solid black;
+            padding: 30px;
         }
+
+        .checkers tr:nth-child(odd) td:nth-child(odd) {
+            background-color: black;
+        }
+
+        .checkers tr:nth-child(even) td:nth-child(even) {
+            background-color: black;
+        } 
     </style>
     <link rel="stylesheet" href="navbar.css">
 </head>
@@ -53,7 +62,7 @@
                 <li>
                     <a href="gallery.html" class="nav-it">My Gallery</a>
                 </li>
-                <li>
+                  <li>
                     <a href="animations.html" class="nav-it">Animations</a>
                 </li>
                 <li>
@@ -62,12 +71,13 @@
                 <li class="dropdown-list drop-toggle">
                     <a class="nav-it" href="">Forms</a>
                     <i class="fa fa-chevron-down dropdown"></i>
-                    <ul class="list-drop">
+                   <ul class="list-drop">
                         <li><a href="form1.html">Form 1</a></li>
                         <li><a href="form2.html">Form 2</a></li>
                         <li><a href="form3.html">Form 3</a></li>
                         <li><a href="form4.html">Form 4</a></li>
                         <li><a href="form5.html">Form 5</a></li>
+                    </ul><a href="ass7.html">Form 5</a></li>
                     </ul>
                 </li>
                 <li class="dropdown-list drop-toggle">
@@ -99,7 +109,88 @@
         </div>
     </nav>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <table class="checkers">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </body>
+
+</html>

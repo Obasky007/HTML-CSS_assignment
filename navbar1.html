@@ -4,18 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Navbar 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
+        .nav {
+            display: flex;
+            background-color: rgb(9, 0, 0);
+            justify-content: space-between;
+            align-items: center;
         }
 
-        h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
+        .link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .lists {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            padding: 0px;
+            margin: 0px;
+            width: 380px;
+        }
+
+        .logo-h {
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+            align-items: center;
+        }
+
+        .right-r {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .icons {
+            color: white;
+            font-size: 20px;
+            margin-right: 20px;
         }
     </style>
     <link rel="stylesheet" href="navbar.css">
@@ -52,7 +84,7 @@
                 </li>
                 <li>
                     <a href="gallery.html" class="nav-it">My Gallery</a>
-                </li>
+        </li>
                 <li>
                     <a href="animations.html" class="nav-it">Animations</a>
                 </li>
@@ -98,8 +130,35 @@
             </ul>
         </div>
     </nav>
-
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <br>
+    <nav class="nav">
+        <div class="logo-h">
+            <p>Logo Here.</p>
+        </div>
+        <div class="right-r">
+            <div>
+                <ul class="lists">
+                    <li>
+                        <a href="" class="link">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Category</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Collections</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-sid">
+                <i class="fa-regular fa-heart icons"></i>
+                <i class="fa-solid fa-cart-shopping icons"></i>
+                <i class="fa-solid fa-user icons"></i>
+            </div>
+        </div>
+    </nav>
 </body>
+
+</html>

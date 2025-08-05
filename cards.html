@@ -4,20 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <style>
-        img {
-            border: 20px double #ff0000;
-            border-radius: 500px;
-        }
-
-        h2 {
-            background-color: rgb(44, 203, 35);
-            width: 180px;
-            height: 400px;
-            box-shadow: -40px -40px 50px rgb(255, 0, 0) inset
-        }
-    </style>
+    <title>Cards</title>
+    <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="navbar.css">
 </head>
 
@@ -53,7 +41,7 @@
                 <li>
                     <a href="gallery.html" class="nav-it">My Gallery</a>
                 </li>
-                <li>
+                  <li>
                     <a href="animations.html" class="nav-it">Animations</a>
                 </li>
                 <li>
@@ -62,7 +50,7 @@
                 <li class="dropdown-list drop-toggle">
                     <a class="nav-it" href="">Forms</a>
                     <i class="fa fa-chevron-down dropdown"></i>
-                    <ul class="list-drop">
+                   <ul class="list-drop">
                         <li><a href="form1.html">Form 1</a></li>
                         <li><a href="form2.html">Form 2</a></li>
                         <li><a href="form3.html">Form 3</a></li>
@@ -99,7 +87,68 @@
         </div>
     </nav>
 
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis nisi eum, mollitia quibusdam nostrum
-        minus deleniti quis deserunt perferendis.</h2>
-    <img src="do 3wnload.jpg" alt="">
+    <div class="parent">
+        <!-- CARD-1 -->
+        <div class="card">
+            <div class="card-img-section">
+                <img src="download (1).jpg" class="card-img" alt="">
+            </div>
+            <div class="card-body">
+                <span class="card-flag flag-1">Technology</span>
+                <h2 class="card-title">Lorem, ipsum dolor sit</h2>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sed tenetur fugit
+                    alias, vitae aperiam?
+                </p>
+                <div class="card-profile-section">
+                    <img src="download (1).jpg" class="profile-img" alt="">
+                    <div class="card-profile-text">
+                        <span class="profile-name">John Doe</span>
+                        <span class="time">2hrs ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD-2 -->
+        <div class="card">
+            <div class="card-img-section">
+                <img src="download.jpg" class="card-img" alt="">
+            </div>
+            <div class="card-body">
+                <span class="card-flag flag-2">Food</span>
+                <h2 class="card-title">Lorem, ipsum dolor sit</h2>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sed tenetur fugit
+                    alias, vitae aperiam?
+                </p>
+                <div class="card-profile-section">
+                    <img src="download.jpg" class="profile-img" alt="">
+                    <div class="card-profile-text">
+                        <span class="profile-name">Ademuyiwa Obaloluwa</span>
+                        <span class="time">2hrs ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD-3 -->
+        <div class="card">
+            <div class="card-img-section">
+                <img src="download (1).jpg" class="card-img" alt="">
+            </div>
+            <div class="card-body">
+                <span class="card-flag flag-3">Automobile</span>
+                <h2 class="card-title">Lorem, ipsum dolor sit</h2>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sed tenetur fugit
+                    alias, vitae aperiam?
+                </p>
+                <div class="card-profile-section">
+                    <img src="download (1).jpg" class="profile-img" alt="">
+                    <div class="card-profile-text">
+                        <span class="profile-name">Ademuyiwa Obaloluwa</span>
+                        <span class="time">1h ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
 </body>
+
+</html>
