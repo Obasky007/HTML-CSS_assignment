@@ -4,72 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards</title>
+    <title>Card 2</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        .first{
-            display: block;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid black;
-            width: fit-content;
-        }
-        .img,.head{
+        .card-container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding-bottom: 10px;
+            max-width: 1100px;
+            margin: 0 auto;
         }
-        button{
-            border: none;
-            background-color: black;
+
+        .card {
+            background: #fff;
+            width: 800px;
+            padding: 30px 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            height: 300px;
+            /* border: 1px solid black; */
+        }
+
+        .pnk {
+            background-color: rgb(237, 72, 72);
             color: white;
-            padding: 10px 20px;
-            width: auto;
-            border-radius: 5px;
-            margin-bottom: 10px;
+            border: none;
         }
-        .button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            background-color: black;
+        }
+
+        .red {
+            background-color: white;
+            color: rgb(237, 72, 72);
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .fa-brands {
+            font-size: 90px;
+
+        }
+
+        .ca {
+            border: 1px solid;
         }
         p{
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .first{
-            padding: 20px;
-            margin-left: 10px;
-            margin-top: 10px;
+            margin-bottom: 30px;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-    <div class="container">
-        <form>
-            <div class="first">
-                <div class="img">
-                    <img src="phlogo.png" alt="">
-                </div>
-                <div class="head">
-                    <h1>TWITTER</h1>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Fugit culpa <br>ullam odit, quae sit fugiat
-                        quod
-                        id voluptas quo dign<br>issimos, inventor Lorem, ipsum dolor.
-                    </p>
-                </div>
-                <div class="button">
-                    <button>READ MORE</button>
-                </div>
-            </div>
-        </form>
+    <a href="cards2.html">Cards 2</a>
+    <a href="cards3.html">Cards 3</a>
+    <a href="page7.html">page 7</a>
+    <a href="page8.html">page 8</a>
+    <a href="page9.html">page 9</a>
+
+    <div class="card-container">
+        <div class="card ca">
+            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Laudantium optio culpa accusantium.</p>
+            <button class="btn">Read More</button>
+        </div>
+
+        <div class="card pnk">
+            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Laudantium optio culpa accusantium.</p>
+            <button class="btn red">Read More</button>
+        </div>
+
+        <div class="card ca">
+            <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Laudantium optio culpa accusantium.</p>
+            <button class="btn">Read More</button>
+        </div>
     </div>
 </body>
 
