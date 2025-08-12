@@ -19,6 +19,7 @@
      box-shadow: 0px 0px 40px rgb(218, 116, 88);
      margin-top: 5px;
      margin-bottom: 10px;
+     overflow: auto;
  }
 
  .text {
@@ -54,6 +55,7 @@
 
  .nav-it {
      text-decoration: none;
+     transition: 0.3s all ease-in-out;
      color: bisque;
  }
 
@@ -88,9 +90,62 @@
  a:hover {
      font-weight: 1000;
      text-decoration: none;
-     font-size: 20px;
+     font-size: 15px;
+     padding: 7px 20px;
+     border-radius: 50px;
+     background-color: rgba(255, 170, 0, 0.326);
  }
 
  a {
      text-decoration: none;
+ }
+
+ .menu {
+     background-color: transparent;
+     border: none;
+     font-size: 30px;
+     display: none;
+     color: bisque;
+
+ }
+
+ .menu:hover {
+     cursor: pointer;
+     transition: 0.3s all ease-in-out;
+     font-size: 30.5px;
+
+ }
+
+ @media (max-width: 1090px) {
+     .nav-links {
+         display: none;
+     }
+
+     .menu {
+         display: flex;
+         position: relative;
+         left: 80px;
+     }
+
+     .navbar {
+         justify-content: center;
+         align-items: center;
+     }
+
+     .nav-link{
+         display: none;
+     }
+
+     .parent {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .top, .bottom {
+         flex-direction: column;
+         display: block;
+     }
+
  }
