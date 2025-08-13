@@ -71,7 +71,14 @@
  }
 
  .fa {
-     font-size: 10px;
+     font-size: 15px;
+     color: bisque;
+ }
+
+ .fa:hover {
+     color: rgb(255, 170, 0);
+     transition: 0.3s all ease-in-out;
+
  }
 
  .list-drop {
@@ -147,5 +154,12 @@
          flex-direction: column;
          display: block;
      }
+     h1{
+            font-size: 35px;
+            text-align: center;
+            margin-top: 10px;
+            /* color: bisque; */
+     }
+     
 
  }
