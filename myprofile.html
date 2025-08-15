@@ -4,114 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar 1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="navbar.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
-
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            padding: 0 10px;
-
-        }
-
-        .texts {
-            font-weight: 800;
-            display: flex;
-            gap: 5px;
-            align-items: center;
-        }
-
-        .bar {
-            width: 4px;
-            height: 20px;
-            border-radius: 1px;
-            display: inline-block;
-        }
-
-        .contents {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .navlinks {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style-type: none;
-            gap: 20px;
-            padding: 0;
-
-        }
-
-        .navit {
-            text-decoration: none;
-            color: black;
-        }
-
-
-        .dropdownlist {
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2px;
-
-
-        }
-
-        .icon {
-            font-size: 10px;
-        }
-
-        .listdrop {
-            display: none;
-            color: white;
-            background-color: black;
-            position: absolute;
-            list-style-type: none;
-        }
-
-        .droptoggle:hover .listdrop {
-            display: block;
-            margin-top: 90px;
-
-        }
-
-
-        .cta {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .cta1 {
-            border: none;
-            padding: 9px 20px;
-            border-radius: 20px;
-        }
-
-        .buy {
-            background-color: red;
-            color: white;
-            border: 1px solid red;
-        }
-    </style>
+    <title>My Profile (with tailwind css)</title>
 </head>
 
-<body>
-    <nav class="navbar">
+<body class="bg-slate-300">
+     <nav class="navbar">
         <div class="text">
             <h1>Oba's Ass</h1>
         </div>
@@ -205,52 +105,32 @@
             </ul>
         </div>
     </nav>
-    <br>
-    <nav class="nav">
-        <div class="texts">
-            <p>LEAD</p>
+
+    <div class="bg-white rounded-xl shadow-[20px] w-[430px] m-auto mt-10 h-[400px]">
+        <div class="w-[430px]">
+            <img src="download (1).jpg" alt="" class="rounded-t-xl w-full h-[140px]">
         </div>
-        <div class="contents">
-
-            <ul class="navlinks">
-                <li>
-                    <a class="navit">Overview</a>
-                </li>
-
-                <li class="dropdownlist droptoggle">
-                    <a class="navit" href="">Pages</a>
-                    <i class="fa fa-chevron-down dropdown icon"></i>
-                    <ul class="listdrop">
-                        <li>Amazon</li>
-                        <li>Twitter</li>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                    </ul>
-                </li>
-
-                <li class="dropdownlist droptoggle">
-                    <a class="navit" href="">Resources</a>
-                    <i class="fa fa-chevron-down dropdown icon"></i>
-                    <ul class="listdrop">
-                        <li>Ipsum.</li>
-                        <li>Cash</li>
-                        <li>Transfer</li>
-                        <li>Withdrawal</li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="navit" href="">Docs</a>
-                </li>
-
-            </ul>
-            <div class="cta">
-                <button class="cta1 buy" href="">Buy Now</button>
+        <div class="flex flex-col justify-center items-center p-4 relative -top-14">
+            <img src="download (1).jpg" alt="" class="w-[100px] h-[100px] rounded-full mb-3 border-4 border-white shadow-lg ">
+            <p class="text-2xl font-bold mb-0">Ademuyiwa Obaloluwa</p>
+            <p class="font-light mb-3 text-blue-800">Freelance Web Designer</p>
+            <div class="flex gap-20 items-center">
+                <div class="flex flex-col">
+                    <i class="fa fa-star text-blue-800"></i>
+                    2K
+                </div>
+                <div class="flex flex-col">
+                    <i class="fa fa-user-group text-blue-800"></i>
+                    10K
+                </div>
+                <div class="flex flex-col">
+                    <i class="fa fa-box text-blue-800"></i>
+                    15
+                </div>
             </div>
+            <div class="mt-3 w-[90%] border-t border-slate-200"></div>
+            <button class="bg-blue-800 text-white rounded-full w-[40%] p-2 mt-3">Follow</button>
         </div>
-    </nav>
-</body>
-
-</html>
 </body>
 
 </html>

@@ -82,7 +82,7 @@ body {
 
 .list-drop {
     display: none;
-    color: bisque;
+    color: black;
     background-color: white;
     position: fixed;
     list-style-type: none;
