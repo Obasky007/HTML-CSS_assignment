@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naija Rice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-slate-600 text-black font-sans">
+
+  <div class="bg-yellow-700 text-white p-5 text-center shadow-xl sticky top-0">
+    <h1 class="text-4xl font-extrabold tracking-wide">Naija Rice</h1>
+  </div>
+
+  <div class="max-w-6xl mx-auto p-6 flex items-start gap-6">
+
+    <div class="flex-1">
+
+      <ul class="flex flex-wrap text-sm font-medium text-center text-blue-700 border-b border-yellow-500" id="default-tab"
+        data-tabs-toggle="#rice-tab-content" role="tablist">
+
+        <li role="presentation">
+          <button class="p-3 border-b-2 rounded-t-lg" id="white-tab" data-tabs-target="#white"
+            type="button" role="tab" aria-controls="white" aria-selected="true">White Rice</button>
+        </li>
+        <li role="presentation">
+          <button class="p-3 border-b-2 rounded-t-lg" id="jollof-tab" data-tabs-target="#jollof"
+            type="button" role="tab" aria-controls="jollof" aria-selected="false">Jollof Rice</button>
+        </li>
+        <li role="presentation">
+          <button class="p-3 border-b-2 rounded-t-lg" id="fried-tab" data-tabs-target="#fried"
+            type="button" role="tab" aria-controls="fried" aria-selected="false">Fried Rice</button>
+        </li>
+        <li role="presentation">
+          <button class="p-3 border-b-2 rounded-t-lg" id="coconut-tab" data-tabs-target="#coconut"
+            type="button" role="tab" aria-controls="coconut" aria-selected="false">Coconut Rice</button>
+        </li>
+      </ul>
+
+      <div id="rice-tab-content" class="bg-slate-500 p-6 shadow-xl rounded-b-lg">
+
+        <div id="white" role="tabpanel" aria-labelledby="white-tab">
+          <h2 class="text-3xl font-bold text-yellow-400 mb-4">White Rice with Stew</h2>
+          <img src="rice&stew.jpeg" alt="" class="w-full h-64  rounded-lg mb-4">
+          <h3 class="font-extrabold text-2xl text-yellow-300 mb-4 underline">Recipe:</h3>
+          <ol class="list-decimal pl-4 text-white mb-4">
+            <li>Wash rice thoroughly.</li>
+            <li>Boil rice with salt until soft.</li>
+            <li>Drain and keep aside.</li>
+            <li>Blend tomatoes, peppers, onions.</li>
+            <li>Heat oil in pot.</li>
+            <li>Fry tomato mix until thick.</li>
+            <li>Add seasoning cubes, curry, thyme.</li>
+            <li>Add cooked beef or chicken.</li>
+            <li>Pour in stock and simmer.</li>
+            <li>Serve stew over white rice.</li>
+          </ol>
+          <p class="mt-4 text-yellow-200 italic">Serving Suggestion: Enjoy with fried plantain, boiled eggs, or a chilled soft drink.</p>
+        </div>
+
+        <div class="hidden" id="jollof" role="tabpanel" aria-labelledby="jollof-tab">
+          <h2 class="text-3xl font-bold text-yellow-400 mb-4">Jollof Rice</h2>
+          <img src="jollof.jpeg" alt="jollof Rice" class="w-full h-64 rounded-lg mb-4">
+          <h3 class="font-extrabold text-2xl text-yellow-300 mb-4 underline">Recipe:</h3>
+          <ol class="list-decimal pl-4 text-white mb-4">
+            <li>Wash and parboil rice, set aside.</li>
+            <li>Blend tomatoes, red peppers, onions.</li>
+            <li>Boil blended mix until thick.</li>
+            <li>Heat oil, add sliced onions.</li>
+            <li>Fry tomato mix in the oil.</li>
+            <li>Add seasoning, curry, thyme, bay leaf.</li>
+            <li>Pour in chicken stock or water.</li>
+            <li>Stir in rice gently.</li>
+            <li>Cover pot, cook on low heat.</li>
+            <li>Fluff rice, serve with meat or plantain.</li>
+          </ol>
+          <p class="mt-4 text-yellow-200 italic">Serving Suggestion: Best served with grilled chicken, salad, and cold drinks at parties.</p>
+        </div>
+
+        <div class="hidden" id="fried" role="tabpanel" aria-labelledby="fried-tab">
+          <h2 class="text-3xl font-bold text-yellow-400 mb-4">Fried Rice</h2>
+          <img src="fried.jpeg" alt="" class="w-full h-64 rounded-lg mb-4">
+          <h3 class="font-extrabold text-2xl text-yellow-300 mb-4 underline">Recipe:</h3>
+          <ol class="list-decimal pl-4 text-white mb-4">
+            <li>Wash and parboil rice.</li>
+            <li>Boil rice in stock until almost done.</li>
+            <li>Cut vegetables: carrot, peas, green beans.</li>
+            <li>Dice chicken liver or beef.</li>
+            <li>Heat oil in pan.</li>
+            <li>Stir-fry vegetables and liver.</li>
+            <li>Add curry and seasoning.</li>
+            <li>Mix in cooked rice.</li>
+            <li>Stir well until rice is colorful.</li>
+            <li>Serve hot with chicken or fish.</li>
+          </ol>
+          <p class="mt-4 text-yellow-200 italic">Serving Suggestion: Pair with grilled prawns, roasted chicken, or moi moi.</p>
+        </div>
+
+        <div class="hidden" id="coconut" role="tabpanel" aria-labelledby="coconut-tab">
+          <h2 class="text-3xl font-bold text-yellow-400 mb-4">Coconut Rice</h2>
+          <img src="coconut.jpeg" alt="" class="w-full h-64 rounded-lg mb-4">
+          <h3 class="font-extrabold text-2xl text-yellow-300 mb-4 underline">Recipe:</h3>
+          <ol class="list-decimal pl-4 text-white mb-4">
+            <li>Wash and parboil rice, set aside.</li>
+            <li>Break coconut, extract milk (or use canned).</li>
+            <li>Blend onions, peppers (optional).</li>
+            <li>Heat oil in a pot, add sliced onions.</li>
+            <li>Fry blended mix until reduced.</li>
+            <li>Add coconut milk and some stock.</li>
+            <li>Season with curry, thyme, salt, cubes.</li>
+            <li>Pour in the rice, stir gently.</li>
+            <li>Cover and cook on low heat.</li>
+            <li>Serve with fried fish, chicken, or plantain.</li>
+          </ol>
+          <p class="mt-4 text-yellow-200 italic">Serving Suggestion: Goes perfectly with fried fish, coleslaw, or spicy pepper sauce.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
