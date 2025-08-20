@@ -89,7 +89,7 @@ body {
     list-style-type: none;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(215, 77, 39, 0.603);;
+    box-shadow: 0px 0px 20px rgba(215, 77, 39, 0.603);
 }
 
 .drop-toggle:hover .list-drop {
@@ -100,10 +100,11 @@ body {
 }
 
 a:hover {
-    text-decoration: none;
-    padding: 7px 20px;
-    border-radius: 50px;
-    background-color: rgba(255, 170, 0, 0.326);
+    background-color: rgb(255, 170, 0);
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.3s all ease-in-out;
 }
 
 a {
