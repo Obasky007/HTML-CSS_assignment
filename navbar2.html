@@ -4,114 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar 1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Navbar 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="navbar.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-        }
-
-
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            padding: 0 10px;
-
-        }
-
-        .texts {
-            font-weight: 800;
-            display: flex;
-            gap: 5px;
-            align-items: center;
-        }
-
-        .bar {
-            width: 4px;
-            height: 20px;
-            border-radius: 1px;
-            display: inline-block;
-        }
-
-        .contents {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .navlinks {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style-type: none;
-            gap: 20px;
-            padding: 0;
-
-        }
-
-        .navit {
-            text-decoration: none;
-            color: black;
-        }
-
-
-        .dropdownlist {
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2px;
-
-
-        }
-
-        .icon {
-            font-size: 10px;
-        }
-
-        .listdrop {
-            display: none;
-            color: white;
-            background-color: black;
-            position: absolute;
-            list-style-type: none;
-        }
-
-        .droptoggle:hover .listdrop {
-            display: block;
-            margin-top: 90px;
-
-        }
-
-
-        .cta {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .cta1 {
-            border: none;
-            padding: 9px 20px;
-            border-radius: 20px;
-        }
-
-        .buy {
-            background-color: red;
-            color: white;
-            border: 1px solid red;
-        }
-    </style>
 </head>
 
-<body>
-    <nav class="navbar">
+<body class="bg-black">
+    <!-- <nav class="navbar">
         <div class="text">
             <h1>Oba's Ass</h1>
         </div>
@@ -207,53 +108,103 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <br>
-    <nav class="nav">
-        <div class="texts">
-            <p>LEAD</p>
-        </div>
-        <div class="contents">
 
-            <ul class="navlinks">
-                <li>
-                    <a class="navit">Overview</a>
-                </li>
 
-                <li class="dropdownlist droptoggle">
-                    <a class="navit" href="">Pages</a>
-                    <i class="fa fa-chevron-down dropdown icon"></i>
-                    <ul class="listdrop">
-                        <li>Amazon</li>
-                        <li>Twitter</li>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                    </ul>
-                </li>
+    <nav class="bg-white border-gray-200 ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap ">Lead</span>
+            <div class="md:order-2 space-x-3 rtl:space-x-reverse md:space-x-0">
+            <button class="rounded-full text-white bg-red-600 py-1 px-2">Buy Now</button>
+            <button data-collapse-toggle="navbar-dropdown" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            </div>
+            <div class="hidden w-full md:w-auto md:flex justify-center text-center gap-10" id="navbar-dropdown">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
 
-                <li class="dropdownlist droptoggle">
-                    <a class="navit" href="">Resources</a>
-                    <i class="fa fa-chevron-down dropdown icon"></i>
-                    <ul class="listdrop">
-                        <li>Ipsum.</li>
-                        <li>Cash</li>
-                        <li>Transfer</li>
-                        <li>Withdrawal</li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="navit" href="">Docs</a>
-                </li>
-
-            </ul>
-            <div class="cta">
-                <button class="cta1 buy" href="">Buy Now</button>
+                    <li>
+                        <a href="#"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Overview</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Pages
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Resources
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        
+                    <li>
+                        <a href="#"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">Docs</a>
+                    </li>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
-</html>
 </body>
 
 </html>

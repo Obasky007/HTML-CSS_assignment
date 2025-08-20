@@ -4,52 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar 2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <style>
-        .nav {
-            display: flex;
-            background-color: rgb(9, 0, 0);
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .link {
-            text-decoration: none;
-            color: white;
-        }
-
-        .lists {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-            padding: 0px;
-            margin: 0px;
-            width: 380px;
-        }
-
-        .logo-h {
-            color: white;
-            font-weight: 800;
-            font-size: 20px;
-            align-items: center;
-        }
-
-        .right-r {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 60px;
-        }
-
-        .icons {
-            color: white;
-            font-size: 20px;
-            margin-right: 20px;
-        }
-    </style>
+    <title>Navbar 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="navbar.css">
 </head>
 
@@ -62,9 +20,6 @@
             <ul class="nav-links">
                 <li>
                     <a href="index.html" class="nav-it">Home</a>
-                </li>
-                <li>
-                    <a href="tailwind.html" class="nav-it">Tailwind</a>
                 </li>
                 <li>
                     <a href="myprofile.html" class="nav-it">My Profile</a>
@@ -152,34 +107,61 @@
         </div>
     </nav>
     <br>
-    <nav class="nav">
-        <div class="logo-h">
-            <p>Logo Here.</p>
-        </div>
-        <div class="right-r">
-            <div>
-                <ul class="lists">
+
+
+    <nav class="bg-black border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Logo Here</span>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:flex justify-center items-center gap-5 md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col md:flex-row gap-4 md:gap-6 p-2 md:p-0 md:border-0 bg-black rounded-lg md:bg-black">
                     <li>
-                        <a href="" class="link">Home</a>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            Home
+                        </a>
                     </li>
                     <li>
-                        <a href="" class="link">Category</a>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            Category
+                        </a>
                     </li>
                     <li>
-                        <a href="" class="link">Collections</a>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            Collection
+                        </a>
                     </li>
                     <li>
-                        <a href="" class="link">Contact Us</a>
+                        <a href="#"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                            Contact Us
+                        </a>
                     </li>
                 </ul>
-            </div>
-            <div class="right-sid">
-                <i class="fa-regular fa-heart icons"></i>
-                <i class="fa-solid fa-cart-shopping icons"></i>
-                <i class="fa-solid fa-user icons"></i>
+                <div
+                    class="flex py-2 px-3 justify-between gap-4 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                    <i class="fa-regular fa-heart icons"></i>
+                    <i class="fa-solid fa-cart-shopping icons"></i>
+                    <i class="fa-solid fa-user icons"></i>
+                </div>
             </div>
         </div>
     </nav>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
